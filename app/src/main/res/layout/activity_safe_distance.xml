@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".safeDistance">
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/distanceSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="300dp"
+        android:contentDescription="Safe Distance"
+        android:stepSize="5"
+        android:value="35"
+        android:valueFrom="15"
+        android:valueTo="65"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderText"
+        app:thumbColor="@color/purple_200"
+        app:thumbRadius="15dp"
+        app:trackHeight="4dp" />
+
+    <TextView
+        android:id="@+id/sliderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="195dp"
+        android:textSize="18dp"
+        android:paddingHorizontal="80dp"
+        android:text="You can adjust the safe distance by using the slider below. This will help you find the optimal safe distance while using the cruise mode"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

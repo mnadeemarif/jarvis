@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/connectSensors"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:paddingHorizontal="30dp"
+        android:text="Connect Sensors"
+        android:textSize="20dp"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="22dp"
+        app:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/teal_200" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cruiseMode"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="Cruise Mode"
+        android:textSize="20dp"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="22dp"
+        app:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectSensors" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/parkingMode"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="Parking Mode"
+        android:textSize="20dp"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="22dp"
+        app:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cruiseMode" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cameraView"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="Camera View"
+        android:textSize="20dp"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="22dp"
+        app:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parkingMode" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setSafeDistance"
+        android:layout_width="300dp"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="22dp"
+        app:elevation="5dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Set Safe Distance"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sensorStatus"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="80dp"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="Sensor Status"
+        android:textSize="20dp"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="22dp"
+        app:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setSafeDistance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

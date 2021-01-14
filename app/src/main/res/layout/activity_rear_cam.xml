@@ -6,19 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".rearCam">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"   xmlns:app="http://schemas.android.com/apk/lib/com.google.ads"
-        android:id="@+id/camview">
-
-        <SurfaceView
-            android:id="@+id/sview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true" />
-
-
-    </RelativeLayout>
+   <androidx.camera.view.PreviewView
+       android:id="@+id/rear_camera"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:contentDescription="Preview"
+       android:importantForAccessibility="no"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"></androidx.camera.view.PreviewView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
